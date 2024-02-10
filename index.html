@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="nav">
+        <a href="/" class="logo" id="title"></a>
+
+        <div class="nav-links">
+          <a href="#home" class="nav-item nav-item-active">Home</a>
+          <a href="#about" class="nav-item">About</a>
+          <a href="#services" class="nav-item">Services</a>
+          <a href="#projects" class="nav-item">Projects</a>
+          <a href="#contact" class="nav-item">Contact</a>
+        </div>
+
+        <div class="toggler">
+          <span class="line"></span><span class="line"></span
+          ><span class="line"></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="hero container" id="home">
+      <div class="hero-info">
+        <!-- <h1 id="title"></h1> -->
+          
+      </div>
+
+      <div class="hero-img">
+        <img src="" alt="" />
+      </div>
+    </section>
+
+    <section class="about container" id="about">
+        <div class="about-img">
+            <div id="thought" class="thought"></div>
+            <img src="img/3dcharacter.png" alt="3d character" />
+      </div>
+
+      <div class="about-info">
+        <h2 class="secondery-title">About Me</h2>
+
+        <p class="description">
+          I'm an aspiring <span class="hero-description" id="bio"></span> from Romania, currently living in
+          Malmö. I'm looking to change the path of my career by entering the tech industry.
+        </p>
+
+        <p class="description">
+          My educational background and work experience have given me a passion
+          for creating meaningful and accessible digital solutions that enhance
+          people's lives and connect them with different cultures and
+          perspectives. 
+        </p>
+        <p class="description">
+            I am eager to apply my skills and knowledge to new
+            challenges and opportunities!
+          </p>
+
+          <a href="img/CV.pdf" class="btn hero-btn" target="_blank">CV</a>
+      </div>
+    </section>
+    <div class="services container" id="services">
+      <div class="services-header">
+        <h2 class="secondery-title">Services</h2>
+      </div>
+
+      <div class="grid services-grid">
+        <div class="grid-item services-item">
+          <i class="fa-solid fa-computer"></i>
+          <h3>Web Development</h3>
+          <p class="description-services">HTML/ CSS, Javascript</p>
+        </div>
+        <div class="grid-item services-item">
+          <i class="fa-solid fa-meteor"></i>
+
+          <h3>Research</h3>
+          <p class="description-services">
+            Research on Diversity & Inclusion 
+          </p>
+        </div>
+        <div class="grid-item services-item">
+          <i class="fa-solid fa-pen-nib"></i>
+          <h3>UI/UX Design</h3>
+          <p class="description">
+            Figma, Wireframing, Prototyping & Testing
+          </p>
+        </div>
+      </div>
+    </div>
+    <section class="projects container" id="projects">
+      <div class="projects-header">
+        <h2 class="secondery-title">Projects</h2>
+
+        <div class="projects-tab">
+          <button class="projects-tab-btn projects-tab-btn-active" id="all">
+            All
+          </button>
+          <button class="projects-tab-btn" id="uiux">UI/UX</button>
+          <button class="projects-tab-btn" id="code">Code</button>
+          <button class="projects-tab-btn" id="research">Research</button>
+        </div>
+      </div>
+
+      <div class="grid projects-grid">
+        <div class="grid-item projects-item all uiux">
+          <img src="img/Screenshot 2024-02-07 at 15.55.10.png" alt="" />
+        </div>
+       
+        <div class="grid-item projects-item all code">
+          <img src="img/Screenshot 2024-02-09 at 11.26.33.png" alt="" />
+        </div>
+
+        <div class="grid-item projects-item all research">
+          <img src="img/Screenshot 2024-02-09 at 11.21.06.png" alt="" />
+        </div>
+        
+    </section>
+
+    <section class="container contact" id="contact">
+      <div class="contact-info">
+        <h2 class="secondery-title">Contact</h2>
+        <div class="info-container">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <div class="contact-info-data">
+              <h3>Address</h3>
+              <p id="location"></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="contact-info-data">
+              <h3>Email</h3>
+              <p id="email"></p>
+            </div>
+          </div>
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa-solid fa-phone-volume"></i>
+            </div>
+            <div class="contact-info-data">
+              <h3>Phone</h3>
+              <p class="phone">+46 73 870 21 17</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="contact-form">
+        <form>
+          <input type="text" placeholder="Name"/>
+          <input type="text" placeholder="Email" />
+          <textarea
+            name="message"
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Write me a message"
+          ></textarea>
+          <button class="btn submit-btn">Send Message</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer">
+        <a href="https://github.com/diana-dodan" target="_blank" type="button"><i class="fa-brands fa-github fa-2xl" id="github"></i></a>
+
+        <a href="https://www.linkedin.com/in/dodandiana/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl" id="linkedin"></i></a>
+    </footer>
+    <script type="module">
+        import { Octokit, App } from "https://esm.sh/octokit";
+        </script>
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
