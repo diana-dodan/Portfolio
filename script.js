@@ -1,5 +1,3 @@
-import { Octokit } from "https://esm.sh/octokit";
-
 const toggler = document.querySelector(".toggler");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-item");
@@ -41,25 +39,28 @@ projectsTabBtns.forEach((btn) => {
   });
 });
 
-const token = config.MY_KEY;
-const octokit = new Octokit({
-  auth: token,
-});
+const getProfile = async () => {
+  const req = await fetch("https://api.github.com/users/diana-dodan");
+  const data = await req.json();
 
-const profile = await octokit.rest.users.getAuthenticated();
-const name = profile.data.name;
+  return data;
+};
+
+const profile = await getProfile();
+console.log(profile);
+const name = profile.name;
 const titleElement = document.getElementById("title");
 titleElement.innerHTML = name;
 
-const bio = profile.data.bio;
+const bio = profile.bio;
 const bioElement = document.getElementById("bio");
 bioElement.innerHTML = bio;
 
-const location = profile.data.location;
+const location = profile.location;
 const locationElement = document.getElementById("location");
 locationElement.innerHTML = location;
 
-const email = profile.data.email;
+const email = profile.email;
 const emailElement = document.getElementById("email");
 emailElement.innerHTML = email;
 
