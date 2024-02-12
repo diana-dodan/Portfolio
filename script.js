@@ -1,3 +1,5 @@
+import { Octokit } from "https://esm.sh/octokit";
+
 const toggler = document.querySelector(".toggler");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-item");
@@ -38,8 +40,8 @@ projectsTabBtns.forEach((btn) => {
     });
   });
 });
-import { Octokit } from "https://esm.sh/octokit";
-const token = `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`;
+
+const token = config.MY_KEY;
 const octokit = new Octokit({
   auth: token,
 });

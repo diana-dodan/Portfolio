@@ -21,10 +21,10 @@
         <a href="/" class="logo" id="title"></a>
 
         <div class="nav-links">
-          <a href="#home" class="nav-item nav-item-active">Home</a>
+          <a href="#" class="nav-item nav-item-active" onclick="router('home')">Home</a>
           <a href="#about" class="nav-item">About</a>
-          <a href="#services" class="nav-item">Services</a>
-          <a href="#projects" class="nav-item">Projects</a>
+          <a href="#services" class="nav-item">Skills</a>
+          <a href="#projects" class="nav-item">Experience</a>
           <a href="#contact" class="nav-item">Contact</a>
         </div>
 
@@ -53,7 +53,7 @@
       </div>
 
       <div class="about-info">
-        <h2 class="secondery-title">About Me</h2>
+        <h2 class="secondery-title">About</h2>
 
         <p class="description">
           I'm an aspiring <span class="hero-description" id="bio"></span> from Romania, currently living in
@@ -76,26 +76,25 @@
     </section>
     <div class="services container" id="services">
       <div class="services-header">
-        <h2 class="secondery-title">Services</h2>
+        <h2 class="secondery-title">Skills</h2>
       </div>
 
       <div class="grid services-grid">
         <div class="grid-item services-item">
-          <i class="fa-solid fa-computer"></i>
+          <i class="fa-solid fa-code"></i>
           <h3>Web Development</h3>
           <p class="description-services">HTML/ CSS, Javascript</p>
         </div>
         <div class="grid-item services-item">
-          <i class="fa-solid fa-meteor"></i>
-
+          <i class="fa-solid fa-magnifying-glass"></i>
           <h3>Research</h3>
           <p class="description-services">
             Research on Diversity & Inclusion 
           </p>
         </div>
         <div class="grid-item services-item">
-          <i class="fa-solid fa-pen-nib"></i>
-          <h3>UI/UX Design</h3>
+          <i class="fa-solid fa-palette"></i>
+                    <h3>UI/UX Design</h3>
           <p class="description">
             Figma, Wireframing, Prototyping & Testing
           </p>
@@ -104,7 +103,7 @@
     </div>
     <section class="projects container" id="projects">
       <div class="projects-header">
-        <h2 class="secondery-title">Projects</h2>
+        <h2 class="secondery-title">Experience</h2>
 
         <div class="projects-tab">
           <button class="projects-tab-btn projects-tab-btn-active" id="all">
@@ -185,6 +184,7 @@
 
         <a href="https://www.linkedin.com/in/dodandiana/" target="_blank"><i class="fa-brands fa-linkedin-in fa-2xl" id="linkedin"></i></a>
     </footer>
+    <script type='text/javascript' src='config.js'></script>
     <script type="module">
         import { Octokit, App } from "https://esm.sh/octokit";
         </script>

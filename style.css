@@ -207,6 +207,7 @@ img {
   padding: 2rem 1rem;
   margin-bottom: 1.5rem;
   z-index: -1;
+  align-items: center;
 }
 
 .services-item i {
@@ -358,7 +359,7 @@ textarea {
 }
 
 /* Desktop Design */
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 768px) {
   .container {
     padding: 4rem 6rem;
   }
@@ -466,4 +467,7 @@ textarea {
     cursor: pointer;
     color: #f29cb1;
   }
+}
+
+@media (min-width: 576px) {
 }
