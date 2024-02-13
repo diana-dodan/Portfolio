@@ -1,9 +1,9 @@
-const toggler = document.querySelector(".toggler");
+const changeNav = document.querySelector(".nav-change");
 const navLinks = document.querySelector(".nav-links");
 const navItems = document.querySelectorAll(".nav-item");
 
 // show and hide navbar in mobile
-toggler.addEventListener("click", () => {
+changeNav.addEventListener("click", () => {
   navLinks.classList.toggle("nav-active");
 });
 
@@ -56,15 +56,13 @@ const bio = profile.bio;
 const bioElement = document.getElementById("bio");
 bioElement.innerHTML = bio;
 
-const location = profile.location;
-const locationElement = document.getElementById("location");
-locationElement.innerHTML = location;
+// const location = profile.location;
+// const locationElement = document.getElementById("location");
+// locationElement.innerHTML = location;
 
-const email = profile.email;
-const emailElement = document.getElementById("email");
-emailElement.innerHTML = email;
-
-console.log(profile.data);
+// const email = profile.email;
+// const emailElement = document.getElementById("email");
+// emailElement.innerHTML = email;
 
 const thoughts = [
   "Hej! I'm Diana",
